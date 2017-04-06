@@ -21,7 +21,7 @@ cp scripts/*.py $MATAM_HOME/scripts
 # copy dependencies
 COMPONENT_SEARCH=$MATAM_HOME/componentsearch
 mkdir $COMPONENT_SEARCH
-cp componentsearch/ComponentSearch.jar $COMPONENT_SEARCH
+cp componentsearch/componentsearch $COMPONENT_SEARCH
 
 OVGRAPHBUILD=$MATAM_HOME/ovgraphbuild/bin
 mkdir -p $OVGRAPHBUILD

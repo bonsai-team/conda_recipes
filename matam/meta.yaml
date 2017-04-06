@@ -1,10 +1,10 @@
 package:
   name: matam
-  version: "v0.9.9"
+  version: "v1.0.0"
 
 source:
   git_url: https://github.com/bonsai-team/matam.git
-  git_tag: v0.9.9
+  git_tag: v1.0.0
 
 requirements:
   build:
@@ -12,19 +12,17 @@ requirements:
     - google-sparsehash
     - bzip2
     - samtools >=1.0
-    - openjdk
     - python >=3.5
   run:
     - wget
     - libgcc-5 # [not osx]
     - zlib
-    - openjdk
     - python >=3.5
     - samtools >=1.0
 
 test:
-    commands:
-        - matam_assembly.py -h
+  commands:
+    - matam_assembly.py -h
 
 about:
   home: https://github.com/bonsai-team/matam
