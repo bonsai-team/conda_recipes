@@ -35,9 +35,9 @@ SORTMERNA=$MATAM_HOME/sortmerna
 mkdir -p $SORTMERNA
 cp sortmerna/{sortmerna,indexdb_rna} $SORTMERNA
 
-SUMACLUST=$MATAM_HOME/sumaclust
-mkdir -p $SUMACLUST
-cp sumaclust/sumaclust $SUMACLUST
+VSEARCH=$MATAM_HOME/vsearch/bin
+mkdir -p $VSEARCH
+cp vsearch/bin/vsearch $VSEARCH
 
 
 #libs
