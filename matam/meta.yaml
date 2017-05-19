@@ -1,10 +1,10 @@
 package:
   name: matam
-  version: "v1.1.0"
+  version: "v1.2.0"
 
 source:
   git_url: https://github.com/bonsai-team/matam.git
-  git_tag: v1.1.0
+  git_tag: 7b1dd4a3beed73db1b3c0d5049c217c6d63441ea
 
 requirements:
   build:
@@ -20,6 +20,8 @@ requirements:
     - zlib
     - python >=3.5
     - samtools >=1.0
+    - rdptools
+    - krona
 
 test:
   commands:

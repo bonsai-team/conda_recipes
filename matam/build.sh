@@ -14,9 +14,12 @@ mkdir -p $PREFIX/lib
 $PYTHON build.py build
 
 # copy matam scripts
-cp index_default_ssu_rrna_db.py $MATAM_HOME
-cp bin/* $MATAM_HOME/bin
 cp scripts/*.py $MATAM_HOME/scripts
+cp index_default_ssu_rrna_db.py $MATAM_HOME
+
+#make a symlink as matam do
+ln -s $MATAM_HOME/scripts/matam_assembly.py $MATAM_HOME/bin/matam_assembly.py
+ln -s $MATAM_HOME/scripts/matam_db_preprocessing.py $MATAM_HOME/bin/matam_db_preprocessing.py
 
 # copy dependencies
 COMPONENT_SEARCH=$MATAM_HOME/componentsearch
