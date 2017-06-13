@@ -1,10 +1,13 @@
 package:
   name: matam
-  version: "v1.2.0"
+  version: "{{ GIT_DESCRIBE_TAG }}"
+
+build:
+  number: {{ GIT_DESCRIBE_NUMBER }}
+  string: {{ GIT_BUILD_STR }}
 
 source:
   git_url: https://github.com/bonsai-team/matam.git
-  git_tag: 7b1dd4a3beed73db1b3c0d5049c217c6d63441ea
 
 requirements:
   build:
