@@ -10,14 +10,14 @@ requirements:
     - autoconf
     - zlib
     - bzip2
-    - samtools >=1.0
+    - samtools ==1.4.1 # otherwise: Centos7 (need libbz2.so.1.0)
     - python >=3.5
   run:
     - wget
     - libgcc-5 # [not osx]
     - zlib
     - python >=3.5
-    - samtools >=1.0
+    - samtools ==1.4.1 # otherwise: Centos7 (need libbz2.so.1.0)
     - rdptools
     - krona
     - coreutils # Centos6 (otherwise sort --parallel is unrecognized)
