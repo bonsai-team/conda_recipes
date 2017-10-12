@@ -18,8 +18,7 @@ cp scripts/*.py $MATAM_HOME/scripts
 cp index_default_ssu_rrna_db.py $MATAM_HOME
 
 #make a symlink as matam do
-ln -s $MATAM_HOME/scripts/matam_assembly.py $MATAM_HOME/bin/matam_assembly.py
-ln -s $MATAM_HOME/scripts/matam_db_preprocessing.py $MATAM_HOME/bin/matam_db_preprocessing.py
+ln -s $MATAM_HOME/scripts/matam_* $MATAM_HOME/bin/
 
 # copy dependencies
 COMPONENT_SEARCH=$MATAM_HOME/componentsearch
@@ -47,6 +46,5 @@ cp vsearch/bin/vsearch $VSEARCH
 cp ./lib/bamtools/lib/libbamtools.so.2.4.1 $PREFIX/lib
 
 # symlinks
-ln -s $MATAM_HOME/index_default_ssu_rrna_db.py $PREFIX/bin/index_default_ssu_rrna_db.py
-ln -s $MATAM_HOME/bin/matam_assembly.py $PREFIX/bin/matam_assembly.py
-ln -s $MATAM_HOME/bin/matam_db_preprocessing.py $PREFIX/bin/matam_db_preprocessing.py
+ln -s $MATAM_HOME/index_default_ssu_rrna_db.py $PREFIX/bin/
+ln -s $MATAM_HOME/bin/matam_* $PREFIX/bin/
